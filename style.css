@@ -1,0 +1,158 @@
+:root {
+    --main-color: #00AA00;
+    --secondary-color: #004400;
+    --background-color: #181818;
+    --text-color: #ccc;
+    --edge-color: #00ff00;
+    --box-shadow: #2bff00;
+    --invert: 1;
+}
+
+html, body {
+    color: var(--text-color);
+}
+
+#content {
+    margin: 0px;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    background-image: url("logo.png");
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    align-self: flex-start;
+    margin-left: 0px;
+    margin-right: 100px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color)
+}
+
+/* Content sections */
+.styled, form {
+    max-width: 900px;
+    margin: 30px;
+    padding: 20px;
+    background: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px var(--box-shadow)
+}
+
+.styled h1 {
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.styled h3 {
+    color: var(--main-color);
+    margin-top: 20px;
+}
+
+.styled h4 {
+    color: var(--main-color);
+    margin-top: 15px;
+}
+
+.styled ul {
+    margin: 10px 0 10px 10px;
+}
+
+form, form div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid var(--edge-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: var(--secondary-color);
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #0000001a;
+    padding-left: 10px;
+}
+
+#footer a {
+    margin: 5px;
+}
+
+#github img {
+    width: 20px;
+    height: 20px;
+    filter: invert(var(--invert));
+}
+
+#email img {
+    width: 30px;
+    height: 30px;
+    filter: invert(var(--invert));
+}
+
+#darkmode {
+    margin-right: auto;
+}
+
+#darkmode img {
+    width: 20px;
+    height: 20px;
+    filter: invert(var(--invert));
+}
